@@ -7,23 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63EAAC9C29337AEA00CB2396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAC9B29337AEA00CB2396 /* AppDelegate.swift */; };
-		63EAAC9E29337AEA00CB2396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAC9D29337AEA00CB2396 /* SceneDelegate.swift */; };
-		63EAACA029337AEA00CB2396 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAC9F29337AEA00CB2396 /* ViewController.swift */; };
-		63EAACA329337AEA00CB2396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EAACA129337AEA00CB2396 /* Main.storyboard */; };
-		63EAACA529337AEC00CB2396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EAACA429337AEC00CB2396 /* Assets.xcassets */; };
-		63EAACA829337AEC00CB2396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EAACA629337AEC00CB2396 /* LaunchScreen.storyboard */; };
+		63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAACB229337B3A00CB2396 /* 11.27.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63EAAC9829337AEA00CB2396 /* CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		63EAAC9B29337AEA00CB2396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63EAAC9D29337AEA00CB2396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63EAAC9F29337AEA00CB2396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63EAACA229337AEA00CB2396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63EAACA429337AEC00CB2396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63EAACA729337AEC00CB2396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		63EAACA929337AEC00CB2396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EAACB229337B3A00CB2396 /* 11.27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.27.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +45,26 @@
 		63EAAC9A29337AEA00CB2396 /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				63EAAC9B29337AEA00CB2396 /* AppDelegate.swift */,
-				63EAAC9D29337AEA00CB2396 /* SceneDelegate.swift */,
-				63EAAC9F29337AEA00CB2396 /* ViewController.swift */,
-				63EAACA129337AEA00CB2396 /* Main.storyboard */,
-				63EAACA429337AEC00CB2396 /* Assets.xcassets */,
-				63EAACA629337AEC00CB2396 /* LaunchScreen.storyboard */,
-				63EAACA929337AEC00CB2396 /* Info.plist */,
+				63EAACAF29337AF600CB2396 /* 11.27~12.3 주차  첫 시작 */,
 			);
 			path = CodingTest;
+			sourceTree = "<group>";
+		};
+		63EAACAF29337AF600CB2396 /* 11.27~12.3 주차  첫 시작 */ = {
+			isa = PBXGroup;
+			children = (
+				63EAACB029337B2800CB2396 /* 11.27 */,
+			);
+			name = "11.27~12.3 주차  첫 시작";
+			path = "11월5주차 시작";
+			sourceTree = "<group>";
+		};
+		63EAACB029337B2800CB2396 /* 11.27 */ = {
+			isa = PBXGroup;
+			children = (
+				63EAACB229337B3A00CB2396 /* 11.27.swift */,
+			);
+			path = 11.27;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					63EAAC9729337AEA00CB2396 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -125,9 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EAACA829337AEC00CB2396 /* LaunchScreen.storyboard in Resources */,
-				63EAACA529337AEC00CB2396 /* Assets.xcassets in Resources */,
-				63EAACA329337AEA00CB2396 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +136,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EAACA029337AEA00CB2396 /* ViewController.swift in Sources */,
-				63EAAC9C29337AEA00CB2396 /* AppDelegate.swift in Sources */,
-				63EAAC9E29337AEA00CB2396 /* SceneDelegate.swift in Sources */,
+				63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		63EAACA129337AEA00CB2396 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63EAACA229337AEA00CB2396 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		63EAACA629337AEC00CB2396 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63EAACA729337AEC00CB2396 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		63EAACAA29337AEC00CB2396 /* Debug */ = {
@@ -285,6 +262,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -302,6 +280,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hemg2.CodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodingTest/11월5주차 시작/11.27/CodingTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -329,6 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hemg2.CodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CodingTest/11월5주차 시작/11.27/CodingTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
