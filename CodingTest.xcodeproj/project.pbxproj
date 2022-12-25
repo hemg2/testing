@@ -11,6 +11,7 @@
 		630C2B3F293799A10068314E /* 11.30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C2B3E293799A10068314E /* 11.30.swift */; };
 		630C2B4A2938D8430068314E /* 12.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C2B492938D8430068314E /* 12.1.swift */; };
 		63913D8629350958005D02F2 /* 11.28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63913D8529350958005D02F2 /* 11.28.swift */; };
+		63A6EEED295737BF00E442EA /* 12.24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6EEEC295737BF00E442EA /* 12.24.swift */; };
 		63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAACB229337B3A00CB2396 /* 11.27.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		630C2B3E293799A10068314E /* 11.30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.30.swift; sourceTree = "<group>"; };
 		630C2B492938D8430068314E /* 12.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.1.swift; sourceTree = "<group>"; };
 		63913D8529350958005D02F2 /* 11.28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.28.swift; sourceTree = "<group>"; };
+		63A6EEEC295737BF00E442EA /* 12.24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.24.swift; sourceTree = "<group>"; };
 		63EAAC9829337AEA00CB2396 /* CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EAACB229337B3A00CB2396 /* 11.27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.27.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A6EEEB295737B300E442EA /* 12 */ = {
+			isa = PBXGroup;
+			children = (
+				63A6EEEC295737BF00E442EA /* 12.24.swift */,
+			);
+			path = 12;
+			sourceTree = "<group>";
+		};
 		63EAAC8F29337AEA00CB2396 = {
 			isa = PBXGroup;
 			children = (
@@ -53,17 +63,18 @@
 		63EAAC9A29337AEA00CB2396 /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				63EAACAF29337AF600CB2396 /* 11.27~12.3 주차  첫 시작 */,
+				63EAACAF29337AF600CB2396 /* 11.27~12.1 */,
+				63A6EEEB295737B300E442EA /* 12 */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
 		};
-		63EAACAF29337AF600CB2396 /* 11.27~12.3 주차  첫 시작 */ = {
+		63EAACAF29337AF600CB2396 /* 11.27~12.1 */ = {
 			isa = PBXGroup;
 			children = (
 				63EAACB029337B2800CB2396 /* 11.27 */,
 			);
-			name = "11.27~12.3 주차  첫 시작";
+			name = "11.27~12.1";
 			path = "11월5주차 시작";
 			sourceTree = "<group>";
 		};
@@ -151,6 +162,7 @@
 				630C2B4A2938D8430068314E /* 12.1.swift in Sources */,
 				630C2B3B293659750068314E /* 11.29.swift in Sources */,
 				630C2B3F293799A10068314E /* 11.30.swift in Sources */,
+				63A6EEED295737BF00E442EA /* 12.24.swift in Sources */,
 				63913D8629350958005D02F2 /* 11.28.swift in Sources */,
 				63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */,
 			);
