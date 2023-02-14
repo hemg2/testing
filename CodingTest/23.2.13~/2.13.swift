@@ -10,6 +10,20 @@ import Foundation
 /*
  2.14
  
+ 문자열 내림차순 배치
+ func solution(_ s:String) -> String {
+     return String(s.sorted(by: >))
+ }
+ 런타임 에러?...
+
+ func solution(_ s:String) -> String {
+     var a = String(s.sorted(by: >))
+     return a
+ }
+이건 통과..????
+ 
+ 
+ 정수 내림차순 배치
  func solution(_ n:Int64) -> Int64 {
      var a: [Int] = []
      let b = String(n)
@@ -32,8 +46,7 @@ import Foundation
  
  
  
- 
- 자연수 뒤집어 배열로 만들기 인트안에 스트링이 감싸지는게 됬따.......
+ 자연수 뒤집어 배열로 만들기
  unc solution(_ n:Int64) -> [Int] {
      var a : [Int] = []
      var b = String(n)
@@ -45,6 +58,7 @@ import Foundation
      return a.reversed()
  }
  print(solution(12345))
+ 자연수 뒤집어 배열로 만들기 인트안에 스트링이 감싸지는게 됬따.......
  
  
  
