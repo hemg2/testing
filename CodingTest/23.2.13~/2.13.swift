@@ -8,6 +8,48 @@
 import Foundation
 
 /*
+ 2.14
+ 
+ func solution(_ n:Int64) -> Int64 {
+     var a: [Int] = []
+     let b = String(n)
+     var bb = ""
+     for i in b.sorted(by: >) {
+         let c = Int(String(i))!
+         a.append(c)
+         print("a의 값\(a)")
+     }
+     
+     a.map {
+         bb = bb + "\($0)"
+     }
+     let aa = Int(bb)!
+     배열인트에서 인트로 변경하는방법 swift int array to int
+     return Int64(Int(aa))
+ }
+ print(solution(118372))
+
+ 
+ 
+ 
+ 
+ 자연수 뒤집어 배열로 만들기 인트안에 스트링이 감싸지는게 됬따.......
+ unc solution(_ n:Int64) -> [Int] {
+     var a : [Int] = []
+     var b = String(n)
+     
+     for i in b {
+         var c = Int(String(i))!
+         a.append(c)
+     }
+     return a.reversed()
+ }
+ print(solution(12345))
+ 
+ 
+ 
+ 
+ 2.13
   음양 더하기
  func solution(_ absolutes:[Int], _ signs:[Bool]) -> Int {
      var a : [Int] = []
