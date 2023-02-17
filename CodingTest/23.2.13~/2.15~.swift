@@ -10,7 +10,71 @@ import Foundation
 
 /*
  
+ 2.17
+ 약수의 개수와 덧셈
  
+ func solution(_ left:Int, _ right:Int) -> Int {
+     var a = 0
+     // 약수 구하기
+     for i in left...right {
+         var c = 0
+         for j in 1...i {
+             if i % j == 0 {
+                 c += 1
+             }
+         }
+         if c % 2 == 0 {
+             a += i
+         } else {
+             a -= i
+         }
+     }
+     return a
+ }
+ print(solution(13, 17))
+ 
+ 2.16
+ 
+ //내적  이중포문에 삼중 포문에 뭐 별걸 다해봤다 제대로 되지도않았다 포문없이 기본 값부터 해서 차근차근 다시 해보았다 갑자기 된다...
+ //ex    인덱스 카운트를 해서 곱하기만하면 끝이다..
+ //var c = a[0] * b[0]
+ //   var d = a[1] * b[1]
+ //   var e = a[2] * b[2]
+ //   var f = a[3] * b[3]
+ //   var gg = c + d + e + f
+ //   return gg
+ //func solution(_ a:[Int], _ b:[Int]) -> Int {
+ //    var aa = 0
+ //
+ //    for i in 0..<a.count {
+ //        aa += a[i] * b[i]
+ //        print("aa\(a[i])")
+ //        print("bb\(b[i])")
+ //    }
+ //    return aa
+ //}
+ //print(solution([1, 2, 3, 4], [-3, -1, 0 ,2]))
+ 
+ // 수박수박수박수박수? 혹시 몰라서 했는데 스트링값도 추가 되었다.
+ //func solution(_ n:Int) -> String {
+ //    var a = String()
+ //
+ //    for i in 0..<n {
+ //        if i % 2 == 0 {
+ //            a += "수"
+ //        } else {
+ //            a += "박"
+ //        }
+ //    }
+ //    return a
+ //}
+ //print(solution(3))
+ //print(solution(4))
+ 
+ 
+ 
+ 
+ 2.15
  
  // 가운데 글자 가져오기
  //func solution(_ s:String) -> String {
