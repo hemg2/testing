@@ -10,6 +10,28 @@ import Foundation
 
 /*
  
+ 2.23 
+ // 이상한 문자 만들기
+ func solution(_ s:String) -> String {
+     var a : [String] = []
+     var b = 0
+     
+     for i in s {
+         if b % 2 == 0 {
+             a.append(String(i.uppercased())) //b가 짝수라면 대문자를 추가하겠다
+         } else {
+             a.append(String(i.lowercased())) //b가 짝수가 아니라면 소문자를 추가하겠다
+         }
+         b += 1 // 1를 b에 더해주겠다.
+         
+         if i == " " { // 하지만 i 가 띄어쓰기라면
+             b = 0 // b는 0이다
+         }
+     }
+     return a.joined()
+ }
+ print(solution("try hello world"))
+ 
  
  // 부족한 금액 계산하기
  //func solution(_ price:Int, _ money:Int, _ count:Int) -> Int64{
