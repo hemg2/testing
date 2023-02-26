@@ -9,6 +9,29 @@ import Foundation
 
 
 /*
+ 2.26
+ //k번째수
+ func solution(_ array:[Int], _ commands:[[Int]]) -> [Int] {
+     var result : [Int] = []
+     
+     for i in commands {
+         var a = i[0]-1
+         var b = i[1]-1
+         var c = i[2]-1
+         
+ //        print("1 = \(a)")
+ //        print("2 = \(b)")
+ //        print("3 = \(c)")
+         var aa = array[a...b].sorted()
+         print("aa = \(aa)")
+         result.append(aa[c])
+         
+     }
+  
+     return result
+ }
+ print(solution([1, 5, 2, 6, 3, 7, 4], [[2, 5, 3], [4, 4, 1], [1, 7, 3]]))
+
  
  2.23 
  // 이상한 문자 만들기
