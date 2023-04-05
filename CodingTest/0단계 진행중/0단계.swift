@@ -8,6 +8,19 @@
 import Foundation
 
 /*
+ 
+ 피자 3
+ func solution(_ slice:Int, _ n:Int) -> Int {
+     var result = slice
+     
+     while result / n < 1 {
+         result += slice
+     }
+     return result / slice
+ }
+ print(solution(7, 10))
+ print(solution(4, 12))
+ 
  //피자
  func solution(_ n:Int) -> Int {
      var a: Int = 6
