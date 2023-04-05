@@ -8,6 +8,67 @@
 import Foundation
 
 /*
+ //직삼각형 출력하기
+ let n = readLine()!.components(separatedBy: [" "]) //.map { Int($0)! }
+ var a: String = ""
+ for i in n {
+     a += i
+ }
+
+ var aa: String = ""
+ for i in 1...Int(a)! {
+     aa += "*"
+     a = String(i)
+     print(aa)
+ }
+ 
+ 
+ //같은 문자 반복하기
+ func solution(_ my_string:String, _ n:Int) -> String {
+
+     var a: [Character] = []
+     for i in my_string {
+         a += Array(repeating: i, count: n)
+     }
+     return a.map{String($0)}.joined()
+ }
+ print(solution("hello", 3))
+ 
+ 
+ //옷가게 할인받기
+ func solution(_ price:Int) -> Int {
+     var a: Int = 0
+     
+     if price >= 500000 {
+         a += price - Int(Double(price) * (0.2))
+     } else if price >= 300000 {
+         a += price - Int(Double(price) * (0.1))
+     } else if price >= 100000 {
+         a += price - Int(Double(price) * (0.05))
+     } else {
+         a = price
+     }
+     return a
+ }
+ func solution(_ price:Int) -> Int {
+     var a: Int = 0
+     
+     if price >= 500000 {
+         a += Int(Double(price) * (0.8))
+     } else if price >= 300000 {
+         a += Int(Double(price) * (0.9))
+     } else if price >= 100000 {
+         a += Int(Double(price) * (0.95))
+     } else {
+         a = price
+     }
+     return a
+ }
+ print(solution(150000))
+ print(solution(580000))
+ print(solution(280000))
+ print(solution(0))
+
  
  피자 3
  func solution(_ slice:Int, _ n:Int) -> Int {
