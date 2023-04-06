@@ -8,6 +8,67 @@
 import Foundation
 
 /*
+ 
+ 
+ 외계행성의나이
+ func solution(_ age:Int) -> String {
+     let a =
+     [
+         "0": "a",
+         "1": "b",
+         "2": "c",
+         "3": "d",
+         "4": "e",
+         "5": "f",
+         "6": "g",
+         "7": "h",
+         "8": "i",
+         "9": "j"
+     ]
+     var str = ""
+     
+     for i in String(age) {
+       str += a[String(i)]!
+     }
+     
+     return str
+ }
+ print(solution(1))
+ print(solution(2))
+ print(solution(23))
+ print(solution(51))
+ print(solution(100))
+ 
+ 
+ //순서쌍의 개수
+ func solution(_ n:Int) -> Int {
+     var count = 0
+     for i in 1...n {
+         if n % i == 0 { // 여기까지가 약수
+             count += 1
+         }
+     }
+     
+     return count
+ }
+ print(solution(20))
+ print(solution(100))
+ 
+ 특정문자 제거하기
+ func solution(_ my_string:String, _ letter:String) -> String {
+     var a: String = ""
+     for i in my_string {
+         a += String(i)
+     }
+     var b: [String] = []
+     b.append(letter)
+    let bb = b.map{String($0)}.joined()
+     let cc = a.components(separatedBy: bb)
+     return cc.map{String($0)}.joined()
+ }
+ print(solution("abcdef", "f"))
+ 
+ 
  //직삼각형 출력하기
  let n = readLine()!.components(separatedBy: [" "]) //.map { Int($0)! }
  var a: String = ""
