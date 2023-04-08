@@ -9,6 +9,50 @@ import Foundation
 
 /*
  
+ //배열 원소의 길이
+ func solution(_ strlist:[String]) -> [Int] {
+     var a : [Int] = []
+     
+     for i in strlist {
+         a.append(i.count)
+     }
+
+     return a
+ }
+ print(solution(["we", "are", "the", "wored!"]))
+ 
+ 
+ //배열 유사도
+ func solution(_ s1:[String], _ s2:[String]) -> Int {
+     var a = 0
+     for i in s1 {
+         for j in s2 {
+             if i == j {
+                 a += 1
+             }
+         }
+     }
+     return a
+ }
+ print(solution(["a", "b", "c"], ["com", "b", "d", "p", "c"]))
+
+ //최대값 만들기(1)
+ func solution(_ numbers:[Int]) -> Int {
+     var a: [Int] = []
+     for i in numbers.sorted(by: >) {
+         a.append(i)
+     }
+     var b = 0
+     var c = 0
+     b = a[0]
+     c = a[1]
+     var d = b * c
+     return d
+ }
+ print(solution([1,2,3,4,5]))
+ 
+ 
+ 
  
  외계행성의나이
  func solution(_ age:Int) -> String {
