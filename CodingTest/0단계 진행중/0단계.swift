@@ -9,6 +9,67 @@ import Foundation
 
 /*
  
+ // 모스 부호
+ func solution(_ letter:String) -> String {
+     let morse = [
+             ".-": "a", "-...": "b", "-.-.": "c", "-..": "d", ".": "e", "..-.": "f",
+             "--.": "g", "....": "h", "..": "i", ".---": "j", "-.-": "k", ".-..": "l",
+             "--": "m", "-.": "n", "---": "o", ".--.": "p", "--.-": "q", ".-.": "r",
+             "...": "s", "-": "t", "..-": "u", "...-": "v", ".--": "w", "-..-": "x",
+             "-.--": "y", "--..": "z"
+         ]
+     var str = ""         components를써서 에러처리가 해결 되었다 그래서 딕셔너리 키값에 넣을수있게 되었따.
+     for i in letter.components(separatedBy: " ") {
+         str += morse[i]!
+     }
+     return str
+ }
+ print(solution(".... . .-.. .-.. ---"))
+ 
+ 
+ 
+ // 개미군단
+ func solution(_ hp:Int) -> Int {
+     let one: Int = 5
+     let two: Int = 3
+     let three: Int = 1
+     var count = 0
+     var testHp = hp
+     
+     while testHp > 0 {
+         if testHp >= one {
+             testHp -= one
+         } else if testHp >= two {
+             testHp -= two
+         } else if testHp >= three {
+             testHp -= three
+         }
+         count += 1
+     }
+     
+     return count
+ }
+ print(solution(23))
+
+ 
+ 
+ 
+ //진료순서 정하기  정렬 알고리즘 비슷함
+ func solution(_ arr: [Int]) -> [Int] {
+     let a = arr.sorted(by: >)
+     var result = [Int]()
+     
+     for e in arr {
+         for i in 0..<a.count {
+             if e == a[i] {
+                 result.append(i+1)
+             }
+         }
+     }
+     return result
+ }
+ 
+ 
  //배열 원소의 길이
  func solution(_ strlist:[String]) -> [Int] {
      var a : [Int] = []
