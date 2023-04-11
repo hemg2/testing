@@ -8,6 +8,56 @@
 import Foundation
 
 /*
+ 
+ 
+ 점의 위치 구하기
+ func solution(_ dot:[Int]) -> Int {
+     var result = 0
+     if dot[0] >= 0 && dot[1] >= 0 {
+         result += 1
+         return result
+     } else if dot[0] <= 0 && dot[1] >= 0 {
+         result += 2
+         return result
+     } else if dot[0] <= 0 && dot[1] <= 0 {
+         result += 3
+         return result
+     } else if dot[0] >= 0 && dot[1] <= 0 {
+         result += 4
+         return result
+     }
+     
+     return result
+ }
+ print(solution([2, 4]))
+ print(solution([-7, 9]))
+ 
+ 경우의 수 구하기
+ func factorial(_ number: Int) -> Double {
+     var result = 1.0
+     for i in 1...number {
+         result *= Double(i)
+     }
+     
+     return result
+ }
+
+ func solution(_ balls: Int, _ share: Int) -> Int {
+     
+     if balls == share {
+         return 1
+     }
+     
+ //    let a = (1...balls).reduce(1, *)
+ //    let b = (1...share).reduce(1, *)
+ //    let c = (1...(balls - share)).reduce(1, *)
+ //    return a / (b * c) round 소수점 반올림
+     return Int(round(factorial(balls) / (factorial(balls - share) * factorial(share))))
+ }
+ print(solution(3, 2))
+ print(solution(5, 3))
+ 
+ 
  //가위 바위 보
  func solution(_ rsp:String) -> String {
      let 가위 = "2"
