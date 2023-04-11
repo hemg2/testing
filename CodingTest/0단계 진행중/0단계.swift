@@ -8,6 +8,32 @@
 import Foundation
 
 /*
+ //가위 바위 보
+ func solution(_ rsp:String) -> String {
+     let 가위 = "2"
+     let 바위 = "0"
+     let 보 = "5"
+     var str = ""
+     var a = [Character]()
+     for i in rsp {
+         a.append(i)
+     }
+     let aa = a.map{String($0)}
+     print(aa)
+     for i in aa {
+         if i == 가위 {
+             str += 바위
+         } else if i == 바위 {
+             str += 보
+         } else if i == 보 {
+             str += 가위
+         }
+     }
+     return String(str)
+ }
+ print(solution("2"))
+ print(solution("205"))
+ print(solution("502"))
  
  // 모스 부호
  func solution(_ letter:String) -> String {
