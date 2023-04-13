@@ -8,6 +8,59 @@
 import Foundation
 
 /*
+ 배열 회전시키기
+ func solution(_ numbers:[Int], _ direction:String) -> [Int] {
+     var a = numbers
+     for _ in 0..<numbers.count-1 {
+         if direction == "right" {
+             let first = a.removeFirst()
+             a.append(first)
+             print("right if 안에 a 값 \(a)")
+         }
+     }
+     
+     if direction == "left" {
+         let first = a.removeFirst()
+         a.append(first)
+         print("left if 안에 a 값 \(a)")
+     }
+     return a
+ }
+ print(solution([1, 2, 3], "right"))
+ print(solution([4, 455, 6, 4, -1, 45, 6], "left"))
+ 
+ 
+ 공던지기
+ func solution(_ numbers:[Int], _ k:Int) -> Int {
+     var shiftedNumbers = numbers
+     for _ in 0..<k-1 {
+         let first = shiftedNumbers[0]
+         shiftedNumbers.removeFirst()
+         shiftedNumbers.append(first)
+         let sconds = shiftedNumbers[0]
+         shiftedNumbers.removeFirst()
+         shiftedNumbers.append(sconds)
+         print("\(shiftedNumbers) 리무브")
+     }
+     
+     return shiftedNumbers[0]
+ }
+ print(solution([1, 2, 3, 4], 2))
+ print(solution([1, 2, 3, 4, 5, 6], 5))
+ print(solution([1, 2, 3], 3))
+ 
+ 
+ 2차원 배열
+ func solution(_ num_list:[Int], _ n:Int) -> [[Int]] {
+     var result: [[Int]] = []
+     for i in (stride(from: 0, through: num_list.count-1, by: n)) {
+         result.append(Array(num_list[i..<i+n]))
+     }
+     
+     return result
+ }
+ print(solution([1, 2, 3, 4, 5, 6, 7, 8], 2))
+ print(solution([100, 95, 2, 4, 5, 6, 18, 33, 948], 3))
  
  
  점의 위치 구하기
