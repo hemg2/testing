@@ -8,6 +8,55 @@
 import Foundation
 
 /*
+ 
+ 
+ 
+ 
+ 합성수
+
+func 합성수구하기(_ n: Int) -> Bool {
+    if n < 4 {
+        return false
+    }
+    for i in 2..<n {
+        if n % i == 0 {
+            return true // n이 i로 나누어 떨어지면 합성수
+        }
+    }
+    return false
+}
+
+func solution(_ n:Int) -> Int {
+    var count = 0
+    for i in 0...n {
+        if 합성수구하기(i) {
+            count += 1
+        }
+    }
+    return count
+}
+print(solution(10))
+print(solution(15))
+ 
+ 
+ 
+ 주사위의 개수
+func solution(_ box:[Int], _ n:Int) -> Int {
+    var result: Int = 0
+    
+    let a = box[0] / n
+    let b = box[1] / n
+    let c = box[2] / n
+    print("a = \(a)   b = \(b)  c = \(c)")
+    result = a * b * c
+    return result
+}
+print(solution([1, 1, 1], 1))
+print(solution([10, 8, 6], 3))
+ 
+ 
+ 
+ 
  배열 회전시키기
  func solution(_ numbers:[Int], _ direction:String) -> [Int] {
      var a = numbers
