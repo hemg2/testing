@@ -9,7 +9,22 @@ import Foundation
 
 /*
  
- 
+ 팩토리얼
+ func solution(_ n:Int) -> Int {
+     var result = 1
+     
+     for i in 1...n {
+         result *= i
+         if result == n {
+             return i
+         } else if result > n {
+             return i - 1
+         }
+     }
+     return result
+ }
+ print(solution(3628800))
+
  
  
  합성수
