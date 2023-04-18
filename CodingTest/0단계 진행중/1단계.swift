@@ -10,6 +10,42 @@ import Foundation
 
 /*
 
+ 
+ 소수 만들기
+ func getFactors(of number: Int) -> [Int] {
+     var factors: [Int] = []
+     for i in 2...number {
+         if number % i == 0 {
+             factors.append(i)
+         }
+     }
+     return factors
+ }
+
+ func solution(_ nums:[Int]) -> Int {
+     var answer = 0
+     
+     for i in 0..<nums.count {
+         for j in i+1..<nums.count {
+             for k in j+1..<nums.count {
+                 let sum = nums[i] + nums[j] + nums[k]
+ //                print("\(nums[i]), \(nums[j]), \(nums[k]) = \(sum)")
+                 
+     
+                 let a = getFactors(of: sum)
+ //                print("\(a) a의 값")
+                 if a.count == 1 {
+                     answer += 1
+                 }
+             }
+         }
+     }
+     
+     return answer
+ }
+ print(solution([1, 2, 3, 4]))
+ print(solution([1, 2, 7, 6, 4]))
+ 
   문자열 내 p 와 y 의 갯수
   func solution(_ s:String) -> Bool {
       var countP = 0
