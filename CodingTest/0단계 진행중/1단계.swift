@@ -9,7 +9,25 @@ import Foundation
 
 
 /*
-
+ 크기가 작은 부분문자열
+ func solution(_ t:String, _ p:String) -> Int {
+     var count: Int = 0
+     
+     for i in 0...(t.count - p.count) {
+         print("\(i) 나 뭐야?  \(t.count) 777  \(p.count) 333 ")
+           let startIndex = t.index(t.startIndex, offsetBy: i)
+           let endIndex = t.index(startIndex, offsetBy: p.count)
+           let substring = t[startIndex..<endIndex]
+           
+           if let number = Int(substring) {
+               if number <= Int(p)! {
+                   count += 1
+               }
+           }
+       }
+     return count
+ }
+ print(solution("3141592", "271"))
  
  소수 만들기
  func getFactors(of number: Int) -> [Int] {
