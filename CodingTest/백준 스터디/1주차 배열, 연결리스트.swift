@@ -41,4 +41,21 @@
      print("\(count[i])")
  }
  
+ 방번호
+ var input = readLine()!
+ var count = [Int](repeating: 0, count: 10)
+ var numbers = "0123456789"
+ 
+ for i in input {
+     if let a = numbers.firstIndex(of: i) {
+         count[numbers.distance(from: numbers.startIndex, to: a)] += 1
+     }
+ }
+ 
+ let count6 = count[6]
+ let count9 = count[9]
+ count[6] = (count6 + count9 + 1) / 2
+ count[9] = count[6]
+ 
+ print(count.max()!)
 */
