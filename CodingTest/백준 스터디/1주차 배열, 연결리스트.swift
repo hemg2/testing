@@ -58,4 +58,22 @@
  count[9] = count[6]
  
  print(count.max()!)
+ 
+ 두수의 합
+ let x = Int(readLine()!)!
+ var count = readLine()!.split(separator: " ").compactMap({Int($0)})
+ let y = Int(readLine()!)!
+ var result = 0
+ var needNumber = Set<Int>()
+
+
+ for i in count {
+     if needNumber.contains(i) {
+         result += 1
+     }
+      needNumber.insert(y - i)
+ }
+ print(result)
+ 
+ 
 */
