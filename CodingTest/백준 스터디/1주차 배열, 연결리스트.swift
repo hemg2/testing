@@ -75,5 +75,23 @@
  }
  print(result)
  
+ 개수 세기
+ let x = Int(readLine()!)!
+ var count = readLine()!.split(separator: " ").compactMap({Int($0)})
+ let y = Int(readLine()!)!
+ var result = 0
+ 
+ for i in count {
+ if y == i {
+ result += 1
+ }
+ }
+ print(result)
+ 11
+ 1 4 1 2 4 2 4 2 3 4 4
+ 2
+ 
+ 
+ 
  
 */
