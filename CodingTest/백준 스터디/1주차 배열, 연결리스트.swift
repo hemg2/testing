@@ -92,6 +92,57 @@
  2
  
  
+ /*
+  방배정
+  let input = readLine()!
+  let x = input.split(separator: " ").compactMap { Int($0) }
+  let a = x[0] // 총인원
+  let b = x[1] // 방인원
+  var 남자 = [Int](repeating: 0, count: 6)
+  var 여자 = [Int](repeating: 0, count: 6)
+  
+  for _ in 0..<a {
+  let count = readLine()!.split(separator: " ").compactMap({Int($0)})
+  let aa = count[0] // 성별
+  let bb = count[1] // 학년
+  
+  if aa == 0 {
+  여자[bb - 1] += 1
+  } else {
+  남자[bb - 1] += 1
+  }
+  }
+  var result = 0
+  for i in 남자 {
+  result += (i + b - 1) / b
+  }
+  for i in 여자 {
+  result += (i + b - 1) / b
+  }
+  print(result)
+  */
  
  
+ 
+ strfry   반대로 나오게 하는거
+ //func isReversed(x: String, y: String) -> Bool {
+ //    return x.sorted() == y.sorted()
+ //}
+ //
+ //let testCaseCount = Int(readLine()!)!
+ //
+ //for _ in 1...testCaseCount {
+ //    let input = readLine()!.lowercased().split(separator: " ").compactMap { String($0) }
+ //
+ //    if input.count == 2 {
+ //        let x = input[0]
+ //        let y = input[1]
+ //
+ //        if isReversed(x: x, y: y) {
+ //            print("Possible")
+ //        } else {
+ //            print("Impossible")
+ //        }
+ //    }
+ //}
 */
