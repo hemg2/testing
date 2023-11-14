@@ -145,4 +145,113 @@
  //        }
  //    }
  //}
+ 
+ 
+  나머지 구하기
+  var a = Set<Int>()
+
+  for _ in 0...9 {
+      let b = Int(readLine()!)! % 42
+      a.insert(b)
+  }
+
+  let result = a.count
+  print(result)
+
+ /*
+  평균 구하기
+  let n = Int(readLine()!)!
+  let a = readLine()!.split(separator: " ").map { Double($0)! }
+
+  let max = a.max()!
+  let b = a.map { $0 / max * 100 }
+  print("\(b) 점수")
+
+  var sum = 0.0
+  for i in b {
+      sum += Double(i)
+  }
+
+  let result = sum / Double(n)
+  print(result)
+  */
+
+
+ /*
+  바구니 바꾸기
+  let nm = readLine()!.split(separator: " ").map { Int($0)! }
+  let n = nm[0]
+  let m = nm[1]
+
+  var baskets = Array(1...n)
+
+  for _ in 0..<m {
+      let swap = readLine()!.split(separator: " ").map { Int($0)! }
+
+      let i = swap[0] - 1
+      let j = swap[1] - 1
+
+  //    let temp = baskets[i]
+      baskets[i...j].reverse()
+  //    baskets[j] = temp
+  }
+
+  print(baskets.map { String($0) }.joined(separator: " "))
+
+  공바꾸기
+ let nm = readLine()!.split(separator: " ").map { Int($0)! }
+ let n = nm[0]
+ let m = nm[1]
+
+ var baskets = Array(1...n)
+
+ for _ in 0..<m {
+     let swap = readLine()!.split(separator: " ").map { Int($0)! }
+
+     let i = swap[0] - 1
+     let j = swap[1] - 1
+
+     let temp = baskets[i]
+     baskets[i] = baskets[j]
+     baskets[j] = temp
+ }
+
+ print(baskets.map { String($0) }.joined(separator: " "))
+  */
+
+ /*
+  에너그램
+ func minRemovalsForAnagram(_ word1: String, _ word2: String) -> Int {
+     var count1: [Character: Int] = [:]
+     var count2: [Character: Int] = [:]
+
+     for char in word1 {
+         count1[char, default: 0] += 1
+     }
+
+     for char in word2 {
+         count2[char, default: 0] += 1
+     }
+
+     var removalCount = 0
+
+     for (char, freq) in count1 {
+ //        print("\(char) ...  \(freq) 1111 ")
+         removalCount += max(0, freq - count2[char, default: 0])
+     }
+
+     for (char, freq) in count2 {
+ //        print("\(char) ...  \(freq)  2222")
+         removalCount += max(0, freq - count1[char, default: 0])
+     }
+
+     return removalCount
+ }
+
+ if let word1 = readLine(), let word2 = readLine() {
+ //    print("\(word1) // \(word2)")
+     let result = minRemovalsForAnagram(word1, word2)
+     print(result)
+ }
+ */
 */
