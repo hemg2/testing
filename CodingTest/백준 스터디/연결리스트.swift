@@ -55,3 +55,121 @@
  print(result.map { String($0) }.joined(separator: " "))
   
  */
+
+
+/*
+  코드잇?
+  class Solution {
+      func deleteNode(_ node: ListNode?) {
+          guard let nodeToDelete = node,
+                let nextNode = nodeToDelete.next else {
+              return
+          }
+          
+          nodeToDelete.val = nextNode.val
+          nodeToDelete.next = nextNode.next
+      }
+  }
+
+  class Solution {
+      func reverseList(_ head: ListNode?) -> ListNode? {
+          var current = head
+          var tail: ListNode? = nil
+
+          while current != nil {
+              let next = current!.next
+              current!.next = tail
+              tail = current
+              current = next
+          }
+          return tail
+      }
+  }
+  
+  //public class ListNode {
+  //      public var val: Int
+  //      public var next: ListNode?
+  //      public init() { self.val = 0; self.next = nil; }
+  //      public init(_ val: Int) { self.val = val; self.next = nil; }
+  //      public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+  //}
+
+  //class Solution {
+  //    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
+  //        var arr = [Int]()
+  //        var current = head
+  //
+  //        while current != nil {
+  //            if current?.val != val {
+  //                arr.append(current!.val)
+  //            }
+  //            current = current!.next
+  //        }
+  //
+  //        var newNode: ListNode? = nil
+  //        var tail: ListNode? = nil
+  //
+  //        for i in arr {
+  //            let new2 = ListNode(i)
+  //            if newNode == nil {
+  //                newNode = new2
+  //                tail = new2
+  //            } else {
+  //                tail?.next = new2
+  //                tail = new2
+  //            }
+  //        }
+  //
+  //        return newNode
+  //    }
+  //}
+
+  //class Solution {
+  //    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+  //        var arrS = Set<Int>()
+  //        var current = head
+  //        var p: ListNode? = nil
+  //
+  //        while current != nil {
+  //            if arrS.contains(current!.val) {
+  //                arrS.insert(current!.val)
+  //                p = current
+  //            } else {
+  //                p?.next = current?.next
+  //            }
+  //            current = current!.next
+  //        }
+  //
+  //        return head
+  //    }
+  //}
+
+  //class Solution {
+  //    func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+  //       var arr = [Int]()
+  //       var current = head
+  //
+  //       while current != nil {
+  //           arr.append(current!.val)
+  //           current = current!.next
+  //       }
+  //        for i in 0..<(right - left + 1) / 2 {
+  //            //          4     2     3   /  2
+  ////            print("\(i) i")
+  //           let temp = arr[left + i - 1]
+  //                     //     1
+  //            arr[left + i - 1] = arr[right - i - 1]
+  //            //   1                      3
+  //           arr[right - i - 1] = temp
+  //            //  3
+  //       }
+  //       current = head
+  //
+  //       for i in 0..<arr.count {
+  //           current?.val = arr[i]
+  //           current = current?.next
+  //       }
+  //       return head
+  //    }
+  //}
+ */
