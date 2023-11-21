@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6303BC572B06604200BDAD86 /* 연결리스트.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC562B06604200BDAD86 /* 연결리스트.swift */; };
 		6303BC5B2B09EBFA00BDAD86 /* 시간.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC5A2B09EBFA00BDAD86 /* 시간.swift */; };
+		6303BC5F2B0CE8CD00BDAD86 /* 스택.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */; };
 		630C2B3B293659750068314E /* 11.29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C2B3A293659750068314E /* 11.29.swift */; };
 		630C2B3F293799A10068314E /* 11.30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C2B3E293799A10068314E /* 11.30.swift */; };
 		630C2B4A2938D8430068314E /* 12.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C2B492938D8430068314E /* 12.1.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		6303BC562B06604200BDAD86 /* 연결리스트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "연결리스트.swift"; sourceTree = "<group>"; };
 		6303BC5A2B09EBFA00BDAD86 /* 시간.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "시간.swift"; sourceTree = "<group>"; };
+		6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "스택.swift"; sourceTree = "<group>"; };
 		630C2B3A293659750068314E /* 11.29.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.29.swift; sourceTree = "<group>"; };
 		630C2B3E293799A10068314E /* 11.30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.30.swift; sourceTree = "<group>"; };
 		630C2B492938D8430068314E /* 12.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.1.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				63842AFD2AF763650021AD37 /* 1주차 배열, 연결리스트.swift */,
 				6303BC562B06604200BDAD86 /* 연결리스트.swift */,
 				6303BC5A2B09EBFA00BDAD86 /* 시간.swift */,
+				6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */,
 			);
 			name = "백준 스터디";
 			path = "백준 스터디";
@@ -240,6 +243,7 @@
 				63669CBB29ED265B00DB9AE4 /* 1단계.swift in Sources */,
 				63913D8629350958005D02F2 /* 11.28.swift in Sources */,
 				63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */,
+				6303BC5F2B0CE8CD00BDAD86 /* 스택.swift in Sources */,
 				6390AFD429A36FB40037E1AC /* 2.20~.swift in Sources */,
 				63842AFE2AF763650021AD37 /* 1주차 배열, 연결리스트.swift in Sources */,
 				6390AFC5299A8E8A0037E1AC /* 2.13~14.swift in Sources */,
