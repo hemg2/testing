@@ -6,6 +6,24 @@
 //
 
 import Foundation
+/*
+ 제로 안기준
+ let result = Int(readLine()!)!
+ var 결과 = [Int]()
+ var sum = 0
+ for _ in 0..<result {
+ let input = Int(readLine()!)!
+ 
+ if input == 0 {
+ let last = 결과.removeLast()
+ sum -= last
+ } else {
+ 결과.append(input)
+ sum += input
+ }
+ }
+ print(sum)
+ */
 
 /*
  push X: 정수 X를 스택에 넣는 연산이다.
