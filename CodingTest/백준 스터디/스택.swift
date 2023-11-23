@@ -7,6 +7,33 @@
 
 import Foundation
 /*
+ 스택 수열 전수열?
+ 
+ let n = Int(readLine()!)!
+ var stack = [Int]()
+ var result = [String]()
+ var count = 1
+ for _ in 0..<n {
+ let num = Int(readLine()!)!
+ while count <= num {
+ stack.append(count)
+ result.append("+")
+ count += 1
+ }
+ 
+ let stackPop = stack.popLast()
+ if stackPop == num {
+ result.append("-")
+ } else {
+ result = ["NO"]
+ break
+ }
+ }
+ for 내가정답 in result {
+ print(내가정답)
+ }
+ */
+/*
  제로 안기준
  let result = Int(readLine()!)!
  var 결과 = [Int]()
