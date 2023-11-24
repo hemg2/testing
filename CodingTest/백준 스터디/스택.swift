@@ -7,6 +7,32 @@
 
 import Foundation
 /*
+ 탑
+let n = Int(readLine()!)!
+var 높이 = readLine()!.split(separator: " ").compactMap { Int($0) }
+var n배열 = [Int](repeating: 0, count: n)
+
+var stack = [Int]()
+
+for i in 0..<n {
+    print(i)
+    while !stack.isEmpty && 높이[stack.last!] <= 높이[i] {
+        //        print("\(stack)stack \(i) ii")
+//                print("\(높이[stack.last!]) 높이 스택 <= \(높이[i]) 높이 i")
+        stack.popLast()
+    }
+    
+    if let last = stack.last {
+        n배열[i] = last + 1
+//        print("\(n배열[i])안에서")
+    }
+    stack.append(i)
+//    print("\(n배열[i])밖에서 ")
+}
+
+print(n배열.map {String($0)}.joined(separator: " "))
+ */
+/*
  스택 수열 전수열?
  
  let n = Int(readLine()!)!
