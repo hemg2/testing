@@ -208,4 +208,27 @@ for _ in 0..<result {
         break
     }
 }
+ 
+ 
+ 
+ /*
+  옥상 정원 꾸미기
+  
+ let n = Int(readLine()!)!
+ var stack = [Int]()
+ var result = 0
+ for _ in 1...n {
+     let height = Int(readLine()!)!
+     while let last = stack.last, height >= last {
+         stack.removeLast()
+     }
+     
+     if let last = stack.last {
+         result += stack.count
+     }
+     
+     stack.append(height)
+ }
+ print(result)
+  */
  */
