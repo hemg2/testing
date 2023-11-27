@@ -6,6 +6,26 @@
 //
 
 import Foundation
+
+// 오큰수
+//let n = Int(readLine()!)!
+//var stack = [Int]()
+//var result = Array(repeating: -1, count: n) // 개꿀
+//let number = readLine()!.split(separator: " ").compactMap { Int($0) }
+//
+//for i in 0..<n {
+//    while !stack.isEmpty && number[stack.last!] < number[i] {
+//        let popLastNumber = stack.removeLast()
+//        print("\(popLastNumber) poplastnumber")
+//        result[popLastNumber] = number[i]
+////        print("\(number[i]) number[i]다")
+//    }
+//    stack.append(i)
+//    print("\(stack) stack")
+//    print("\(result) result")
+//}
+//print(result.map {String($0)}.joined(separator: " "))
+
 /*
  탑
 let n = Int(readLine()!)!
