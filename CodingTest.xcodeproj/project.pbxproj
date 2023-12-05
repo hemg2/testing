@@ -22,6 +22,7 @@
 		6390AFCD299C95A00037E1AC /* 2.15~.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390AFCC299C95A00037E1AC /* 2.15~.swift */; };
 		6390AFD429A36FB40037E1AC /* 2.20~.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390AFD329A36FB40037E1AC /* 2.20~.swift */; };
 		63913D8629350958005D02F2 /* 11.28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63913D8529350958005D02F2 /* 11.28.swift */; };
+		639A09502B1EE24C002C1942 /* 스택2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A094F2B1EE24C002C1942 /* 스택2.swift */; };
 		639FAA3D29ADC99D0054CC01 /* 2.27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FAA3C29ADC99D0054CC01 /* 2.27.swift */; };
 		63A6EEED295737BF00E442EA /* 12.24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6EEEC295737BF00E442EA /* 12.24.swift */; };
 		63EAACB329337B3A00CB2396 /* 11.27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAACB229337B3A00CB2396 /* 11.27.swift */; };
@@ -43,6 +44,7 @@
 		6390AFCC299C95A00037E1AC /* 2.15~.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.15~.swift"; sourceTree = "<group>"; };
 		6390AFD329A36FB40037E1AC /* 2.20~.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.20~.swift"; sourceTree = "<group>"; };
 		63913D8529350958005D02F2 /* 11.28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.28.swift; sourceTree = "<group>"; };
+		639A094F2B1EE24C002C1942 /* 스택2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "스택2.swift"; sourceTree = "<group>"; };
 		639FAA3C29ADC99D0054CC01 /* 2.27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.27.swift; sourceTree = "<group>"; };
 		63A6EEEC295737BF00E442EA /* 12.24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.24.swift; sourceTree = "<group>"; };
 		63EAAC9829337AEA00CB2396 /* CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */,
 				639085F32B16F69400DF9E3D /* 큐.swift */,
 				639085F72B1C56FD00DF9E3D /* 덱.swift */,
+				639A094F2B1EE24C002C1942 /* 스택2.swift */,
 			);
 			name = "백준 스터디";
 			path = "백준 스터디";
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639A09502B1EE24C002C1942 /* 스택2.swift in Sources */,
 				639FAA3D29ADC99D0054CC01 /* 2.27.swift in Sources */,
 				63669CB329DD5A3700DB9AE4 /* 0단계.swift in Sources */,
 				630C2B4A2938D8430068314E /* 12.1.swift in Sources */,
