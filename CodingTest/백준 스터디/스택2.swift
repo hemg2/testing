@@ -8,6 +8,34 @@
 import Foundation
 
 /*
+ 괄호
+ let n = Int(readLine()!)!
+
+ for _ in 0..<n {
+     let input = readLine()!
+     var stack = [Character]()
+     var isGunDy = true
+     
+     for i in input {
+         if i == "(" {
+             stack.append(i)
+         } else if i == ")" {
+             if stack.isEmpty {
+                 isGunDy = false
+                 break
+             }
+             stack.removeLast()
+         }
+     }
+     
+     if isGunDy && stack.isEmpty  {
+         print("YES")
+     } else {
+         print("NO")
+     }
+ }
+
+ 
  func isBalanced(_ input: String) -> String {
      var stack = [Character]()
      
