@@ -6,7 +6,29 @@
 //
 
 import Foundation
+/*
+ 쇠막대기
+ 
+let n = readLine()!
+var stack = 0
+var result = 0
+var lastSt: Character = " "
 
+for i in n {
+    if i == "(" {
+        stack += 1
+    } else {
+        stack -= 1
+        if lastSt == "(" {
+            result += stack
+        } else {
+            result += 1
+        }
+    }
+    lastSt = i
+}
+print(result)
+ */
 /*
  괄호
  let n = Int(readLine()!)!
