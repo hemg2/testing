@@ -6,6 +6,31 @@
 //
 
 import Foundation
+
+/*
+ 좋은단어
+ let n = Int(readLine()!)!
+ var goodWordsCount = 0
+
+ for _ in 0..<n {
+     let word = readLine()!
+     var stack = [Character]()
+
+     for char in word {
+         if let last = stack.last, last == char {
+             stack.removeLast()
+         } else {
+             stack.append(char)
+         }
+     }
+
+     if stack.isEmpty {
+         goodWordsCount += 1
+     }
+ }
+ print(goodWordsCount)
+ */
+
 /*
  쇠막대기
  
