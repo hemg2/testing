@@ -6,7 +6,48 @@
 //
 
 import Foundation
+/*
+ 괄호의값
+ let input = readLine()!.map { String($0) }
+ var stack = [String]()
+ var result = 0
+ var temp = 1
+ var isValid = true
 
+ for (n, c) in input.enumerated() {
+     if c == "(" {
+         stack.append(String(c))
+         temp *= 2
+     } else if c == "[" {
+         stack.append(String(c))
+         temp *= 3
+     }
+
+     if c == ")" {
+         if stack.isEmpty || stack.last != "(" {
+             isValid = false
+             break
+         }
+         if input[n-1] == "(" {
+             result += temp
+         }
+         stack.removeLast()
+         temp /= 2
+     } else if c == "]" {
+         if stack.isEmpty || stack.last != "[" {
+             isValid = false
+             break
+         }
+         if input[n-1] == "[" {
+             result += temp
+         }
+         stack.removeLast()
+         temp /= 3
+     }
+ }
+
+ print(stack.isEmpty && isValid ? result : 0)
+ */
 /*
  좋은단어
  let n = Int(readLine()!)!
