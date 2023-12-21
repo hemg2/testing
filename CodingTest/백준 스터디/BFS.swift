@@ -6,6 +6,68 @@
 //
 
 import Foundation
+
+/*
+ let input = readLine()!.split(separator: " ").map { Int($0)! }
+ let n = input[0]
+ let m = input[1]
+
+ var maze = [[Character]]()
+ var fireQueue = [(Int, Int)]()
+ var huQueue = [(Int, Int, Int)]()
+ var visited = Array(repeating: Array(repeating: false, count: m), count: n)
+
+ for i in 0..<n {
+     let row = Array(readLine()!)
+     maze.append(row)
+     for j in 0..<m {
+         if row[j] == "J" {
+             huQueue.append((i, j, 0))
+             visited[i][j] = true
+         } else if row[j] == "F" {
+             fireQueue.append((i, j))
+         }
+     }
+ }
+
+ func bfs() -> String {
+     let dx = [0, 1, 0, -1]
+     let dy = [1, 0, -1, 0]
+
+     while !huQueue.isEmpty {
+         for _ in 0..<fireQueue.count {
+             let (fx, fy) = fireQueue.removeFirst()
+
+             for d in 0..<4 {
+                 let nx = fx + dx[d], ny = fy + dy[d]
+                 if 0 <= nx && nx < n && 0 <= ny && ny < m && maze[nx][ny] == "." {
+                     maze[nx][ny] = "F"
+                     fireQueue.append((nx, ny))
+                 }
+             }
+         }
+
+         for _ in 0..<huQueue.count {
+             let (hx, hy, time) = huQueue.removeFirst()
+
+             if hx == 0 || hx == n - 1 || hy == 0 || hy == m - 1 {
+                 return String(time + 1)
+             }
+
+             for d in 0..<4 {
+                 let nx = hx + dx[d], ny = hy + dy[d]
+                 if 0 <= nx && nx < n && 0 <= ny && ny < m && maze[nx][ny] == "." && !visited[nx][ny] {
+                     visited[nx][ny] = true
+                     huQueue.append((nx, ny, time + 1))
+                 }
+             }
+         }
+     }
+
+     return "IMPOSSIBLE"
+ }
+ print(bfs())
+ */
 /*
  미로 탐색
  let input = readLine()!.split(separator: " ").map { Int(String($0))! }
