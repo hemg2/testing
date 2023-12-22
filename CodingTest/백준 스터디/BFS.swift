@@ -8,13 +8,49 @@
 import Foundation
 
 /*
+ 불!
+ struct Queue<T> {
+     private var array: [T?]
+     private var head: Int = 0
+
+     init() {
+         array = []
+     }
+
+     var isEmpty: Bool {
+         return head >= array.count
+     }
+
+     var count: Int {
+         return array.count - head
+     }
+
+     mutating func enqueue(_ element: T) {
+         array.append(element)
+     }
+
+     mutating func dequeue() -> T? {
+         guard head < array.count, let element = array[head] else { return nil }
+         
+         array[head] = nil
+         head += 1
+
+         if array.count > 50 && head > array.count / 2 {
+             array.removeFirst(head)
+             head = 0
+         }
+
+         return element
+     }
+ }
+
  let input = readLine()!.split(separator: " ").map { Int($0)! }
  let n = input[0]
  let m = input[1]
 
  var maze = [[Character]]()
- var fireQueue = [(Int, Int)]()
- var huQueue = [(Int, Int, Int)]()
+ var fireQueue = Queue<(Int, Int)>()
+ var huQueue = Queue<(Int, Int, Int)>()
  var visited = Array(repeating: Array(repeating: false, count: m), count: n)
 
  for i in 0..<n {
@@ -22,10 +58,10 @@ import Foundation
      maze.append(row)
      for j in 0..<m {
          if row[j] == "J" {
-             huQueue.append((i, j, 0))
+             huQueue.enqueue((i, j, 0))
              visited[i][j] = true
          } else if row[j] == "F" {
-             fireQueue.append((i, j))
+             fireQueue.enqueue((i, j))
          }
      }
  }
@@ -36,34 +72,30 @@ import Foundation
 
      while !huQueue.isEmpty {
          for _ in 0..<fireQueue.count {
-             let (fx, fy) = fireQueue.removeFirst()
-
+             let (fx, fy) = fireQueue.dequeue()!
              for d in 0..<4 {
                  let nx = fx + dx[d], ny = fy + dy[d]
                  if 0 <= nx && nx < n && 0 <= ny && ny < m && maze[nx][ny] == "." {
                      maze[nx][ny] = "F"
-                     fireQueue.append((nx, ny))
+                     fireQueue.enqueue((nx, ny))
                  }
              }
          }
-
+         
          for _ in 0..<huQueue.count {
-             let (hx, hy, time) = huQueue.removeFirst()
-
+             let (hx, hy, time) = huQueue.dequeue()!
              if hx == 0 || hx == n - 1 || hy == 0 || hy == m - 1 {
                  return String(time + 1)
              }
-
              for d in 0..<4 {
                  let nx = hx + dx[d], ny = hy + dy[d]
                  if 0 <= nx && nx < n && 0 <= ny && ny < m && maze[nx][ny] == "." && !visited[nx][ny] {
                      visited[nx][ny] = true
-                     huQueue.append((nx, ny, time + 1))
+                     huQueue.enqueue((nx, ny, time + 1))
                  }
              }
          }
      }
-
      return "IMPOSSIBLE"
  }
  print(bfs())
