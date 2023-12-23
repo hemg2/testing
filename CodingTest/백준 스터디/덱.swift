@@ -6,7 +6,36 @@
 //
 
 import Foundation
+/*
+ 회전하는 큐
+ var input = readLine()!.split(separator: " ").map { Int($0)! }
+ let N = input[0]
 
+ var deque = Array(1...N)
+ var targets = readLine()!.split(separator: " ").map { Int($0)! }
+ var moveCount = 0
+
+ for target in targets {
+     if let index = deque.firstIndex(of: target) {
+         let leftMove = index
+         let rightMove = deque.count - index
+         moveCount += min(leftMove, rightMove)
+
+         if leftMove <= rightMove {
+             for _ in 0..<leftMove {
+                 deque.append(deque.removeFirst())
+             }
+         } else {
+             for _ in 0..<rightMove {
+                 deque.insert(deque.removeLast(), at: 0)
+             }
+         }
+         deque.removeFirst()
+     }
+ }
+
+ print(moveCount)
+ */
 /*
  struct Deque<T> {
      private var array = [T]()
