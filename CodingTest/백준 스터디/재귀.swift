@@ -6,7 +6,45 @@
 //
 
 import Foundation
+/*
+ Z
+ func position(_ n: Int, _ x: Int, _ y: Int) -> Int {
+     var answer = 0
+     var n = n
+     var x = x
+     var y = y
 
+     while n > 0 {
+         n -= 1
+         let half = 1 << n
+
+         if x < half && y < half {
+             continue
+         }
+         if x < half && y >= half {
+             answer += half * half
+             y -= half
+         }
+         if x >= half && y < half {
+             answer += 2 * half * half
+             x -= half
+         }
+         if x >= half && y >= half {
+             answer += 3 * half * half
+             x -= half
+             y -= half
+         }
+     }
+
+     return answer
+ }
+
+ let input = readLine()!.split(separator: " ").compactMap({ Int($0) })
+     if input.count == 3 {
+     let result = position(input[0], input[1], input[2])
+     print(result)
+ }
+ */
 /*
  곱셈
  
