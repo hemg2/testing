@@ -7,6 +7,34 @@
 
 import Foundation
 /*
+ N 과 M(2)
+ func back(n: Int, k: Int) {
+     var a = [Int]()
+     
+     func backtrack(index: Int) {
+         if a.count == k {
+             print(a.map {String($0)}.joined(separator: " "))
+             return
+         }
+         
+         for i in index..<n+1 {
+                 a.append(i)
+                 backtrack(index: i + 1)
+                 a.removeLast()
+         }
+     }
+     backtrack(index: 1)
+ }
+
+ let input = readLine()!.split(separator: " ").compactMap({ Int($0) })
+ if input.count == 2 {
+     let n = input[0]
+     let k = input[1]
+     back(n: n, k: k)
+ }
+ */
+
+/*
  재귀함수가 뭔가요
  func test(_ n: Int, _ depth: Int = 0) {
      let indent = String(repeating: "____", count: depth)
