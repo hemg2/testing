@@ -7,6 +7,38 @@
 
 import Foundation
 /*
+ N 과 M(7)
+ func back(n: [Int], k: Int) {
+ //    var a = [Int]()
+     var result = ""
+     var stack = [String]()
+     
+     func backtrack() {
+         if stack.count == k {
+             result += stack.joined(separator: " ") + "\n"
+             return
+         }
+         
+         for i in 0..<n.count {
+             stack.append(String(n[i]))
+             backtrack()
+             stack.removeLast()
+         }
+     }
+     backtrack()
+     print(result)
+ }
+
+ let input = readLine()!.split(separator: " ").compactMap({ Int($0) })
+ let secondInput = readLine()!.split(separator: " ").compactMap({ Int($0) }).sorted()
+
+ let n = input[0]
+ let k = input[1]
+ if secondInput.count == n {
+     back(n: secondInput, k: k)
+ }
+ */
+/*
  N 과 M(6)
  func back(n: [Int], k: Int) {
      var a = [Int]()
