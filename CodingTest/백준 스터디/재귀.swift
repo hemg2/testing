@@ -7,6 +7,40 @@
 
 import Foundation
 /*
+ 로또
+ func back(n: [Int], k: Int) {
+     var a = [String]()
+     var result = ""
+     
+     func backtrack(index: Int) {
+         if a.count == k {
+             result += a.joined(separator: " ") + "\n"
+             return
+         }
+         
+         for i in index..<n.count {
+             a.append(String(n[i]))
+             backtrack(index: i + 1)
+             a.removeLast()
+         }
+     }
+     backtrack(index: 0)
+     print(result)
+ }
+
+ //let input = readLine()!.split(separator: " ").compactMap({ Int($0) })
+ //let secondInput = readLine()!.split(separator: " ").compactMap({ Int($0) })
+ //let thirdInput = readLine()!.split(separator: " ").compactMap({ Int($0) })
+ while let input = readLine() {
+     let input1 = input.split(separator: " ").compactMap( { Int($0) } )
+     if input1[0] != 0 {
+         let n = Array(input1[1...])
+         let k = 6
+         back(n: n, k: k)
+     }
+ }
+ */
+/*
  N 과 M(7)
  func back(n: [Int], k: Int) {
  //    var a = [Int]()
