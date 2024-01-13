@@ -7,6 +7,43 @@
 
 import Foundation
 /*
+ 암호 만들기
+ func back(n: [String], k: Int) {
+     var a = [String]()
+     var result = ""
+     let aeiou: [Character] = ["a", "e", "i", "o", "u"]
+     
+     func backtrack(index: Int, count: Int, sCount: Int) {
+         if a.count == k {
+             if count >= 1 && sCount >= 2 {
+                 result += a.map{String($0)}.joined(separator: "") + "\n"
+             }
+             return
+         }
+         
+         for i in index..<n.count {
+             a.append(String(n[i]))
+             if aeiou.contains(Character(n[i])) {
+                 backtrack(index: i + 1, count: count + 1, sCount: sCount)
+             } else {
+                 backtrack(index: i + 1, count: count, sCount: sCount + 1)
+             }
+             
+             a.removeLast()
+         }
+     }
+     backtrack(index: 0, count: 0, sCount: 0)
+     print(result)
+ }
+
+ let input = readLine()!.split(separator: " ").compactMap( { Int($0)} )
+ let secondInput = readLine()!.split(separator: " ").map { String($0) }
+ //let secondInput1 = Character(secondInput)
+ let n = input[0]
+ //let k = input[1]
+ back(n: secondInput.sorted(), k: n)
+ */
+/*
  로또
  func back(n: [Int], k: Int) {
      var a = [String]()
