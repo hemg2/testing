@@ -6,7 +6,24 @@
 //
 
 import Foundation
+/*
+ 좌표 정렬하기
+ let input = readLine()!
+ let number = Int(input)!
+ var result = [(Int, Int)]()
 
+ for _ in 0..<number {
+     let row = readLine()!.split(separator: " ").compactMap { Int($0) }
+     let n = row[0]
+     let m = row[1]
+     result.append((n, m))
+ }
+ result.sort(by: <)
+
+ for i in result {
+     print("\(i.0) \(i.1)")
+ }
+ */
 /*
  수 정렬하기
  let input = readLine()!
