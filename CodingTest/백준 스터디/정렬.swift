@@ -7,6 +7,25 @@
 
 import Foundation
 /*
+ 좌표 압축
+ let input1 = Int(readLine()!)!
+ let input2 = readLine()!.split(separator: " ").compactMap { Int($0) }
+
+ let uniqueCoordinates = Set(input2).sorted()
+ //print("\(uniqueCoordinates) asdf")
+ var compressed = [Int: Int]()
+
+ for (index, value) in uniqueCoordinates.enumerated() {
+     compressed[value] = index
+   //  print("\(compressed)123")
+ }
+
+ let a = input2.map { compressed[$0]! }
+ //print("\(a) aaa")
+ print(a .map { String($0) }.joined(separator: " "))
+
+ */
+/*
  좌표 정렬하기 2
  let input = readLine()!
  let number = Int(input)!
