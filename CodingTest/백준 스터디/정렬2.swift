@@ -8,6 +8,26 @@
 import Foundation
 
 /*
+ 카드
+ let n = Int(readLine()!)!
+ var cards = [Int]()
+ var countDict = [Int: Int]()
+
+ for _ in 0..<n {
+     let card = Int(readLine()!)!
+     cards.append(card)
+ }
+
+ for card in cards {
+     countDict[card, default: 0] += 1
+ }
+
+ if let maxCount = countDict.values.max() {
+     let mostFrequent = countDict.filter { $0.value == maxCount }.map { $0.key }.min()!
+     print(mostFrequent)
+ }
+ */
+/*
  시리얼 번호
  let n = Int(readLine()!)!
  var st = [String]()
