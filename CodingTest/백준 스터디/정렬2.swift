@@ -6,7 +6,28 @@
 //
 
 import Foundation
+/*
+ 역원소 정렬
+ let n = readLine()!.split(separator: " ").map { String($0) }
+ let n1 = Int(n[0])!
+ var numbers = [Int]()
 
+ for i in 1..<n.count {
+     let num = Int(String(n[i].reversed()))
+     numbers.append(num!)
+ }
+
+ while let input = readLine() {
+     let number = input.split(separator: " ").map { String($0) }
+     
+     for i in number {
+         let re = Int(String(i.reversed()))
+         numbers.append(re!)
+     }
+ }
+ numbers.sort()
+ print(numbers.map{String($0)}.joined(separator: "\n"))
+ */
 /*
  카드
  let n = Int(readLine()!)!
