@@ -7,6 +7,24 @@
 
 import Foundation
 /*
+ 단어 정렬
+ let n = Int(readLine()!)!
+ var setSt = Set<String>()
+
+ for _ in 0..<n {
+     let input = readLine()!
+     setSt.insert(input)
+ }
+
+ let sortSt = setSt.sorted {
+     if $0.count == $1.count {
+         return $0 < $1
+     }
+     return $0.count < $1.count
+ }
+ print(sortSt.joined(separator: "\n"))
+ */
+/*
  역원소 정렬
  let n = readLine()!.split(separator: " ").map { String($0) }
  let n1 = Int(n[0])!
