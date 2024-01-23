@@ -7,6 +7,35 @@
 
 import Foundation
 /*
+ 빈도 정렬
+ let n = readLine()!.split(separator: " ").map { Int($0)! }
+ //let n1 = n[0]
+ let m = readLine()!.split(separator: " ").map { Int($0)! }
+
+ var first = [Int: Int]()
+ var firstnumber = [Int: Int]()
+
+ for (index, number) in m.enumerated() {
+     first[number, default: 0] += 1
+ //    print("\(index) index /// \(number) number")
+     if firstnumber[number] == nil {
+         firstnumber[number] = index
+     }
+ }
+
+ let sortm = m.sorted {
+     let f = first[$0]
+     let f1 = first[$1]
+ //    print("\(f) ff /// \(f1) f1 f1")
+     if f == f1 {
+         return firstnumber[$0]! < firstnumber[$1]!
+     }
+     
+     return f! > f1!
+ }
+ print(sortm.map { String($0) }.joined(separator: " "))
+ */
+/*
  단어 정렬
  let n = Int(readLine()!)!
  var setSt = Set<String>()
