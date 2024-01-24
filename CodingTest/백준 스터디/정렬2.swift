@@ -7,6 +7,25 @@
 
 import Foundation
 /*
+ 나이순 정렬
+ let a = Int(readLine()!)!
+ var result = [(Int, String)]()
+
+ for _ in 0..<a {
+     let input = readLine()!.split(separator: " ")
+     let age = Int(input[0])!
+     let name = String(input[1])
+     
+     result.append((age, name))
+ }
+
+ result.sort { $0.0 < $1.0 }
+
+ for i in result {
+     print("\(i.0) \(i.1)")
+ }
+ */
+/*
  빈도 정렬
  let n = readLine()!.split(separator: " ").map { Int($0)! }
  //let n1 = n[0]
