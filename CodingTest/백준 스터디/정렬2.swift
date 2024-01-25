@@ -7,6 +7,20 @@
 
 import Foundation
 /*
+ 접미사 배열
+ let n = readLine()!
+ var result = [String]()
+ var input = n
+ for _ in 0..<n.count {
+     result.append(input)
+     input.removeFirst()
+ }
+ result.sort()
+
+
+ print("\(result.joined(separator: "\n"))")
+ */
+/*
  나이순 정렬
  let a = Int(readLine()!)!
  var result = [(Int, String)]()
