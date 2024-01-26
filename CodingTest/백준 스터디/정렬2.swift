@@ -7,6 +7,37 @@
 
 import Foundation
 /*
+ 국영수
+ let n = Int(readLine()!)!
+ var 학생 = [(String, Int, Int, Int)]()
+
+ for _ in 0..<n {
+     let input = readLine()!.split(separator: " ")
+     let 이름 = String(input[0])
+     let 국어 = Int(input[1])!
+     let 영어 = Int(input[2])!
+     let 수학 = Int(input[3])!
+     
+     학생.append((이름, 국어, 영어, 수학))
+ }
+
+ 학생.sort {
+     if $0.1 != $1.1 {
+         return $0.1 > $1.1
+     } else if $0.2 != $1.2 {
+         return $0.2 < $1.2
+     } else if $0.3 != $1.3 {
+         return $0.3 > $1.3
+     } else {
+         return $0.0 < $1.0
+     }
+ }
+ //print(학생)
+ for i in 학생 {
+     print(i.0)
+ }
+ */
+/*
  접미사 배열
  let n = readLine()!
  var result = [String]()
