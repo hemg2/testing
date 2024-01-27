@@ -6,7 +6,62 @@
 //
 
 import Foundation
+/*
+ 유기농 배추
+ let dx = [0, 1, 0, -1]
+ let dy = [1, 0, -1, 0]
 
+ func dfs(_ x: Int, _ y: Int, _ field: inout [[Int]], _ visited: inout [[Bool]], _ M: Int, _ N: Int) {
+     visited[y][x] = true
+
+     for i in 0..<4 {
+         let nx = x + dx[i]
+         let ny = y + dy[i]
+
+         if nx >= 0 && nx < M && ny >= 0 && ny < N {
+             if field[ny][nx] == 1 && !visited[ny][nx] {
+                 dfs(nx, ny, &field, &visited, M, N)
+             }
+         }
+     }
+ }
+
+ func countWorms(_ M: Int, _ N: Int, _ K: Int, _ cabbageLocations: [(Int, Int)]) -> Int {
+     var field = Array(repeating: Array(repeating: 0, count: M), count: N)
+     var visited = Array(repeating: Array(repeating: false, count: M), count: N)
+     var worms = 0
+
+     for loc in cabbageLocations {
+         field[loc.1][loc.0] = 1
+     }
+
+     for y in 0..<N {
+         for x in 0..<M {
+             if field[y][x] == 1 && !visited[y][x] {
+                 dfs(x, y, &field, &visited, M, N)
+                 worms += 1
+             }
+         }
+     }
+
+     return worms
+ }
+
+ let t = Int(readLine()!)!
+
+ for _ in 0..<t {
+     let inputs = readLine()!.split(separator: " ").map { Int($0)! }
+     let M = inputs[0], N = inputs[1], K = inputs[2]
+     var cabbageLocations = [(Int, Int)]()
+
+     for _ in 0..<K {
+         let loc = readLine()!.split(separator: " ").map { Int($0)! }
+         cabbageLocations.append((loc[0], loc[1]))
+     }
+
+     print(countWorms(M, N, K, cabbageLocations))
+ }
+ */
 /*
  불!
  struct Queue<T> {
