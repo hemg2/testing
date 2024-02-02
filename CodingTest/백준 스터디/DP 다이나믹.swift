@@ -7,6 +7,27 @@
 
 import Foundation
 /*
+ func rgb거리(house: [[Int]]) -> Int {
+     var dp = house
+     for i in 1..<house.count {
+         dp[i][0] += min(dp[i-1][1], dp[i-1][2]) //49 + min(40, 83)
+         dp[i][1] += min(dp[i-1][0], dp[i-1][2]) //60 + min(26, 83)
+         dp[i][2] += min(dp[i-1][0], dp[i-1][1]) //57 + min(26, 40)
+     }
+ //    print("\(dp) asd \(house.count - 1)")
+     return dp[house.count-1].min()! // 작은값
+ }
+
+ let n = Int(readLine()!)!
+ var result = [[Int]]()
+
+ for _ in 0..<n {
+     let m = readLine()!.split(separator: " ").map { Int($0)! }
+     result.append(m)
+ }
+ print(rgb거리(house: result))
+ */
+/*
  func 계단오르기(n: [Int]) -> Int {
      guard n.count > 0 else { return 0 }
      if n.count == 1 { return n[0] }
