@@ -7,6 +7,22 @@
 
 import Foundation
 /*
+ func 타일(n: Int) -> Int {
+     var dp = [Int](repeating: 0, count: n+1)
+     dp[1] = 1
+     
+     if n > 1 {
+         dp[2] = 2
+         for i in 3..<n+1 {
+             dp[i] = (dp[i-1] + dp[i-2]) % 10007
+         }
+     }
+     return dp[n]
+ }
+ let n = Int(readLine()!)!
+ print(타일(n: n))
+ */
+/*
  func rgb거리(house: [[Int]]) -> Int {
      var dp = house
      for i in 1..<house.count {
