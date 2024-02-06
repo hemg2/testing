@@ -7,6 +7,39 @@
 
 import Foundation
 /*
+ 1로 만들기2
+ var n = Int(readLine()!)!
+ var dp = [Int](repeating: Int.max, count: n+1)
+ var index = [Int](repeating: 0, count: n+1)
+
+ dp[1] = 0
+
+ for i in 2..<n+1 {
+     dp[i] = dp[i-1]+1
+     index[i] = i-1
+     
+     if i % 2 == 0 && dp[i] > dp[i / 2] + 1 {
+         dp[i] = min(dp[i], dp[i / 2] + 1)
+         index[i] = i / 2
+     }
+     
+     if i % 3 == 0 && dp[i] > dp[i / 3] + 1 {
+         dp[i] = min(dp[i], dp[i / 3] + 1)
+         index[i] = i / 3
+     }
+ }
+
+ print(dp[n])
+
+ var arrN = [n]
+ while n != 1 {
+     arrN.append(index[n])
+     n = index[n]
+ }
+
+ print(arrN.map {String($0)}.joined(separator: " "))
+ */
+/*
  구간합구하기4
  var input = readLine()!.split(separator: " ").map { Int($0)! } // 5 3
  let n = input[0]  // 5
