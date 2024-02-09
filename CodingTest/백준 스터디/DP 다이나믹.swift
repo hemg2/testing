@@ -7,6 +7,28 @@
 
 import Foundation
 /*
+ 피보나치 함수
+ let t = Int(readLine()!)!
+
+ var dp1 = [Int](repeating: 0, count: 41)
+ var dp2 = [Int](repeating: 0, count: 41)
+
+ dp1[0] = 1
+ dp2[0] = 0
+ dp1[1] = 0
+ dp2[1] = 1
+
+ for i in 2...40 {
+     dp1[i] = dp1[i-1] + dp1[i-2]
+     dp2[i] = dp2[i-1] + dp2[i-2]
+ }
+
+ for _ in 1...t {
+     let n = Int(readLine()!)!
+     print("\(dp1[n]) \(dp2[n])")
+ }
+ */
+/*
  1로 만들기2
  var n = Int(readLine()!)!
  var dp = [Int](repeating: Int.max, count: n+1)
