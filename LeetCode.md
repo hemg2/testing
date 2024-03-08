@@ -21,3 +21,22 @@ class Solution {
  }
 }
 ```
+3. https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75
+```swift
+class Solution {
+    func kidsWithCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+    var result = [Bool]()
+    var total = candies.max()
+    
+    for i in candies {
+        if i + extraCandies >= total! {
+            result.append(true)
+        } else {
+            result.append(false)
+        }
+    }
+    
+    return result
+ }
+}
+```
