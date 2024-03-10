@@ -40,3 +40,24 @@ class Solution {
  }
 }
 ```
+
+4. https://leetcode.com/problems/can-place-flowers/?envType=study-plan-v2&envId=leetcode-75
+```swift
+class Solution {
+    func canPlaceFlowers(_ flowerbed: [Int], _ n: Int) -> Bool {
+    // let result : Bool = false
+    var n = n
+    var flowerbed = flowerbed
+    for i in 0..<flowerbed.count {
+        if flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0) && (i == flowerbed.count - 1 || flowerbed[i + 1] == 0) {
+            flowerbed[i] = 1
+            n -= 1
+        }
+        if n <= 0 {
+            return true
+        }
+    }
+    return false
+}
+}
+```
