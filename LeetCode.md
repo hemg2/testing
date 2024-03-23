@@ -85,4 +85,29 @@ class Solution {
 ---
 
 
-5.
+5
+```swift
+class Solution {
+    func reverseVowels(_ s: String) -> String {
+    var result = Array(s)
+    let mo: Set<Character> = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    var left = 0
+    var right = result.count - 1
+    
+    while left < right {
+        while left < right && !mo.contains(result[left]) {
+            left += 1
+        }
+        while left < right && !mo.contains(result[right]) {
+            right -= 1
+        }
+        if left < right {
+            result.swapAt(left, right)
+            left += 1
+            right -= 1
+        }
+    }
+    return String(result)
+}
+}
+```
