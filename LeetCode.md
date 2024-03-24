@@ -111,3 +111,23 @@ class Solution {
 }
 }
 ```
+
+
+
+```swift
+class Solution {
+    func isSubsequence(_ s: String, _ t: String) -> Bool {
+        if s.isEmpty { return true }
+        var sIndex = s.startIndex
+        for i in t {
+            if i == s[sIndex] {
+            sIndex = s.index(after: sIndex)
+            if sIndex == s.endIndex {
+                return true
+            }
+        }
+    }
+    return false
+    }
+}
+```
