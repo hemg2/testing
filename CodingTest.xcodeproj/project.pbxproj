@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630323652BB9A76E00B16E7C /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630323642BB9A76E00B16E7C /* LeetCode.swift */; };
 		6303BC572B06604200BDAD86 /* 연결리스트.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC562B06604200BDAD86 /* 연결리스트.swift */; };
 		6303BC5B2B09EBFA00BDAD86 /* 시간.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC5A2B09EBFA00BDAD86 /* 시간.swift */; };
 		6303BC5F2B0CE8CD00BDAD86 /* 스택.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630323642BB9A76E00B16E7C /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
 		6303BC562B06604200BDAD86 /* 연결리스트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "연결리스트.swift"; sourceTree = "<group>"; };
 		6303BC5A2B09EBFA00BDAD86 /* 시간.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "시간.swift"; sourceTree = "<group>"; };
 		6303BC5E2B0CE8CD00BDAD86 /* 스택.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "스택.swift"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				6390AFC3299A8E790037E1AC /* 23.2.13~ */,
 				63EAACAF29337AF600CB2396 /* 11.27~12.1 */,
 				63A6EEEB295737B300E442EA /* 12 */,
+				630323642BB9A76E00B16E7C /* LeetCode.swift */,
 			);
 			path = CodingTest;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				638B063C2B67EFF3000E3502 /* DP 다이나믹.swift in Sources */,
 				6303BC5F2B0CE8CD00BDAD86 /* 스택.swift in Sources */,
 				6390AFD429A36FB40037E1AC /* 2.20~.swift in Sources */,
+				630323652BB9A76E00B16E7C /* LeetCode.swift in Sources */,
 				633F8E062B7B91D300B92ADC /* 그리디.swift in Sources */,
 				63842AFE2AF763650021AD37 /* 1주차 배열, 연결리스트.swift in Sources */,
 				6390AFC5299A8E8A0037E1AC /* 2.13~14.swift in Sources */,
