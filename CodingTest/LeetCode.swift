@@ -34,6 +34,18 @@ import Foundation
      nums1.sort()
  }
  
+ 150 - 2
+ func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+         var result = 0
+
+         for i in 0..<nums.count {
+             if nums[i] != val {
+                 nums[result] = nums[i]
+                 result += 1
+             }
+         }
+         return result
+     }
  
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
