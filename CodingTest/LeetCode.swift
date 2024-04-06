@@ -47,6 +47,19 @@ import Foundation
          return result
      }
  
+ 150 - 3
+ func removeDuplicates(_ nums: inout [Int]) -> Int {
+     var result = 1
+     
+     for i in 1..<nums.count {
+         if nums[i] != nums[i-1] {
+             nums[result] = nums[i]
+             result += 1
+         }
+     }
+     return result
+   }
+ 
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
  //    var result = 0
