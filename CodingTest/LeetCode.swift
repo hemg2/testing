@@ -8,24 +8,6 @@
 import Foundation
 
 /*
- 디피 1
- 
- func climbStairs(_ n: Int) -> Int {
-     if n <= 2 { return n }
-
-     var first = 1
-     var second = 2
-     
-     for _ in 3...n {
-         let third = first + second
-         first = second
-         second = third
-     }
-     return second
-     }
- 
- */
-/*
  150 - 1
  func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
      for i in 0..<n {
@@ -84,4 +66,31 @@ import Foundation
  //var number = [1, 2, 3, 0, 0, 0]
  //merge(&number, 3, [2, 5, 6], 3)
  //print(number)
+ */
+
+
+
+
+
+
+
+
+
+/*
+ 디피 1
+ 
+ func climbStairs(_ n: Int) -> Int {
+     if n <= 2 { return n }
+
+     var first = 1
+     var second = 2
+     
+     for _ in 3...n {
+         let third = first + second
+         first = second
+         second = third
+     }
+     return second
+     }
+ 
  */
