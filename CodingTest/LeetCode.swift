@@ -42,6 +42,24 @@ import Foundation
      return result
    }
  
+ 150 - 로마 문자 
+ func romanToInt(_ s: String) -> Int {
+        var result = 0
+        let characters = Array(s)
+        var lastValue = 0
+       let romanDict: [Character: Int] = [
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+    ]
+    
+    for character in characters.reversed() {
+        let value = romanDict[character]!
+ 
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
  //    var result = 0
