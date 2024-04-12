@@ -42,7 +42,7 @@ import Foundation
      return result
    }
  
- 150 - 로마 문자 
+ 150 - 로마 문자
  func romanToInt(_ s: String) -> Int {
         var result = 0
         let characters = Array(s)
@@ -59,6 +59,27 @@ import Foundation
     
     for character in characters.reversed() {
         let value = romanDict[character]!
+ 
+ 
+ 150 - 마지막 문자열 길이
+ 
+ func lengthOfLastWord(_ s: String) -> Int {
+    var result = 0
+    var isWord = false
+    
+    for i in s.reversed() {
+        if i == " " {
+            if isWord {
+                break
+            }
+        } else {
+            isWord = true
+            result += 1
+        }
+    }
+    
+    return result
+    }
  
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
