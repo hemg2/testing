@@ -81,6 +81,21 @@ import Foundation
     return result
     }
  
+ 150 - 공통문자 찾아서 반환
+ func longestCommonPrefix(_ strs: [String]) -> String {
+     var prefix = strs[0]
+     
+     for i in strs {
+         while !i.hasPrefix(prefix) {
+             prefix.removeLast()
+             if prefix.isEmpty { return ""}
+         }
+     }
+     
+     return prefix
+    }
+ 
+ 
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
  //    var result = 0
