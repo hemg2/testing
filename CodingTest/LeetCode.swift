@@ -95,6 +95,13 @@ import Foundation
      return prefix
     }
  
+ func strStr(_ haystack: String, _ needle: String) -> Int {
+           guard let index = haystack.range(of: needle)?.lowerBound else { return -1 }
+     let result = haystack.distance(from: haystack.startIndex, to: index)
+     return result
+     }
+ 
+ 
  
  스트링 1번
  //func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
